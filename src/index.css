@@ -1,0 +1,88 @@
+/* font */
+h1,
+h2,
+p {
+  margin: 0;
+  font-family: "Merriweather", serif;
+}
+a,
+p {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #700000;
+}
+h1 {
+  font-weight: 300;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+/* Layout */
+.big-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  margin: 15%;
+  color: black;
+}
+
+.title-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+  font-style: normal;
+  margin: -2%;
+  /* Add these two lines to bring links to the front so they can be clicked */
+  position: relative;
+  z-index: 10;
+}
+.link {
+  margin: 0.25rem;
+}
+
+/* front title */
+.title {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  color: #333;
+  font-size: 3rem;
+  font-weight: 400;
+  font-style: italic;
+}
+.title:hover {
+  color: #700000;
+}
+/* background title */
+.title-2 {
+  position: absolute;
+  font-style: normal;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #444444;
+  font-size: 5rem;
+  font-weight: bold;
+  opacity: 0.2;
+  white-space: nowrap;
+
+  pointer-events: none;
+  user-select: none;
+}
