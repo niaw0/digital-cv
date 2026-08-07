@@ -1,3 +1,3 @@
-# digital-cv
+my website - niawo.xyz
 
-website
+portfolio focused on performance with minimal design.
