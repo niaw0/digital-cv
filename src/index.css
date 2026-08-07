@@ -11,6 +11,10 @@ p {
   color: inherit;
 }
 
+body {
+  min-height: 100vh;
+}
+
 a:hover {
   color: #700000;
 }
@@ -28,7 +32,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 50vh;
+  min-height: 0;
   margin: 15%;
   color: black;
 }
@@ -49,9 +53,7 @@ h2 {
   flex: auto;
   font-style: normal;
   margin: -2%;
-  /* Add these two lines to bring links to the front so they can be clicked */
   position: relative;
-  z-index: 10;
 }
 .link {
   margin: 0.25rem;
@@ -67,19 +69,16 @@ h2 {
   font-weight: 400;
   font-style: italic;
 }
-.title:hover {
-  color: #700000;
-}
+
 /* background title */
 .title-2 {
   position: absolute;
-  font-style: normal;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #444444;
+  color: #525252;
   font-size: 5rem;
-  font-weight: bold;
+  font-style: italic;
   opacity: 0.2;
   white-space: nowrap;
 
