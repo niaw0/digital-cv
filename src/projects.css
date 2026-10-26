@@ -7,7 +7,7 @@
 .page-container {
   display: flex;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   align-items: center;
   flex-direction: column;
 }
@@ -43,26 +43,27 @@ h2 {
 }
 
 .description {
-  margin: 1rem;
-  pad: 1rem;
+  padding: 1rem;
 }
 .bullets {
   margin: 0;
+
   margin-bottom: 5px;
   padding: 0;
 }
 .bullets > li {
-  margin-left: 15px;
+  margin-left: 1.5rem;
 }
 .projects {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-evenly;
+  padding: 2rem;
 }
 .project-box {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .proj-title {
@@ -79,6 +80,7 @@ h2 {
   width: 500px;
   display: flex;
   padding: 5px;
+  max-width: 100%;
 }
 .title-box {
   position: relative;
@@ -101,4 +103,24 @@ h2 {
 
 .tech-stack {
   margin-bottom: 10px;
+}
+
+@media (max-width: 720px) {
+  .project-box {
+    flex-direction: column;
+  }
+
+  .projects {
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+  }
+}
+
+.view {
+  margin-left: 1rem;
+}
+
+.list-title {
+  margin-top: 1rem;
 }

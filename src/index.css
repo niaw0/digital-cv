@@ -2,6 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  color: black;
 }
 
 body {
@@ -29,7 +30,8 @@ body {
   justify-content: center;
 }
 
-a:hover {
+a:hover,
+p:hover {
   color: #700000;
 }
 
@@ -64,12 +66,11 @@ h2 {
   flex-direction: row;
   flex: auto;
   font-style: normal;
-  padding: 2rem;
   position: relative;
-  margin: 1rem;
+  margin: 2rem;
 }
 .link {
-  margin: 0.25rem;
+  margin: 1rem;
 }
 
 /* front title */
@@ -77,7 +78,6 @@ h2 {
   position: relative;
   z-index: 1;
   margin: 0;
-  color: #333;
   font-size: 3rem;
   font-weight: 400;
   font-style: italic;
@@ -97,8 +97,4 @@ h2 {
 
   pointer-events: none;
   user-select: none;
-}
-
-.page-container > * {
-  margin: 1rem;
 }
