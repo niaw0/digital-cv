@@ -29,7 +29,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-
+h2:hover,
 a:hover,
 p:hover {
   color: #700000;
